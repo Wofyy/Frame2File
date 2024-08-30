@@ -39,7 +39,7 @@ Modern Video to PDF Scanner is a Python project that converts video files into P
 ![Screenshot (2365)](https://github.com/SAHILGAWLI/Kheencho/assets/100032163/3b50cbe8-f92c-4c13-a713-ba1e7f1b36e5)
 
 
-## Installation
+## Installation for Linux
 Follow these steps to set up the project:
 
 ### Step 1: Install the required package to create virtual environments if not already installed
@@ -62,3 +62,22 @@ source venv/bin/activate
 pip install opencv-python pytesseract numpy img2pdf flask Flask-WTF WTForms scikit-image Pillow flask-socketio flask-cors
 ```
 
+
+
+## Installation for Windows
+Follw these steps to set up the project:
+
+
+### Step 1: Navigate to your project directory & create a virtual environment in your project directory
+```bash
+python3 -m venv venv
+```
+
+### Step 2: Activate the virtual environment
+```bash
+venv\Scripts\activate
+```
+
+### Step 3: Install your packages within the virtual environment
+```bash
+pip install opencv-python pytesseract numpy img2pdf flask Flask-WTF WTForms scikit-image Pillow flask-socketio flask-cors
