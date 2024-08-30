@@ -9,6 +9,8 @@ from skimage.metrics import structural_similarity as ssim
 from PIL import Image
 from flask_cors import CORS
 
+#hii there
+
 app = Flask(__name__, static_url_path='/static')
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
