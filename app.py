@@ -8,6 +8,7 @@ from flask_socketio import SocketIO
 from skimage.metrics import structural_similarity as ssim
 from PIL import Image
 from flask_cors import CORS
+import platform
 
 
 app = Flask(__name__, static_url_path='/static')
@@ -30,6 +31,12 @@ MAX_FRAMES = FPS_LIMIT * 10  # Limit to 10 seconds of frames (300 frames for 30 
 MIN_LAP_VAR = 100
 SSIM_THRESHOLD = 0.9
 RESIZE_WIDTH = 800
+
+
+# Set up pytesseract path based on OS
+if platform.system() == "Windows":
+    pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract.exe'
+
 
 def extract_frames(video_file_path: str):
     # Read the uploaded video file
