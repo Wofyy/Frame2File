@@ -1,0 +1,33 @@
+<div class="file-source-button">
+  <label for="pc-upload-add" class="action-label">
+    <span>Choose Files</span>
+  </label>
+  <div class="menu-wrapper">
+    <label for="pc-upload-add" class="file-source-btn">
+      <span>Choose Files</span>
+      <i data-toggle-widget=".file-source-nav" data-toggle="dropdown">
+      </i>
+    </label>
+    <div class="dropdown-menu file-source-nav">
+      <input type="file" id="pc-upload-add" name="pc-upload" multiple="multiple" class="file-input">
+      <label for="pc-upload-add" data-action-label="Choose Files" class="nav-item from-pc">
+        <i>
+          <svg width="26" height="24">
+            <use xlink:href="#from-pc"></use>
+          </svg>
+          <svg width="26" height="24" class="svg-from-pc-2" style="display: none;">
+            <use xlink:href="#from-pc-2"></use>
+          </svg>
+        </i>
+      </label> <!----> <!----> <!----><!----> <span data-action-label="From Dropbox" class="nav-item from-dropbox"><i>
+          <svg width="26" height="24">
+            <use xlink:href="{{ url_for('static', filename='dropbox.svg') }}"></use>
+          </svg>
+        </i></span> <!----> <!----><!----> <!----> <span data-action-label="From Google Drive"
+        class="nav-item from-drive"><i>
+          <svg width="24" height="21">
+            <use xlink:href="#from-gdrive"></use>
+          </svg></i></span> <!---->
+    </div>
+  </div>
+</div>

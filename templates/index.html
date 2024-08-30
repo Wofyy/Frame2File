@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Kheencho</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+
+
+
+
+</head>
+
+<body>
+   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a  class="navbar-brand" href="/">Kheencho</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            </ul>
+
+        </div>
+    </nav>
+    
+    
+    <div class="main-content">
+        <div class="container">
+            <div class="content-area">
+                <div class="page-title text-center">
+                    <h1>File Converter</h1>
+                    <h2>Convert your video to pdf</h2>
+
+                </div>
+                <div class="converter-container">
+
+                    <div class="converter-wrapper tall">
+                        <div class="converter">
+                            <div class="file-source-button-wrapper file-source-button-resizable">
+                                <form name="myForm" action="/upload" method="post" enctype="multipart/form-data" onsubmit="return validateForm()">
+                                    <div class="file-source-button">
+                                      <label for="pc-upload-add" class="action-label">
+                                        <span>Choose Files</span>
+                                      </label>
+                                      <input type="file" id="pc-upload-add" name="pc-upload" onchange="submitForm()">
+                                    </div>
+                                    <span id="error-message" style="color:rgb(255, 255, 255);"></span>
+                                  </form>
+                                  
+                               
+                                        
+                                  
+                                  
+                                
+                                    </div>
+                                </div>
+
+
+                                <div class="file-source-caption d-none d-md-block text-left">
+                                    <span>Drop files here. 100 MB maximum file size recommended</span>
+                                </div>
+                                <style>.text-left {
+                                    text-align: center!important;
+                                }</style>
+                                
+                            </div>
+                        </div>
+                    </div><!----><!---->
+
+                </div>
+                <div class="advantages">
+                    <div class="row justify-content-center">
+
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path d="M28,10v5h-5l2.279-2.279C23.752,11.609,21.925,11,20,11c-4.962,0-9,4.038-9,9h-1c0-5.514,4.486-10,10-10
+            c2.191,0,4.271,0.711,5.993,2.007L28,10z"></path>
+                                    <path
+                                        d="M20,2C10.075,2,2,10.075,2,20c0,9.925,8.075,18,18,18c9.925,0,18-8.075,18-18C38,10.075,29.925,2,20,2z
+             M20,37c-9.374,0-17-7.626-17-17S10.626,3,20,3s17,7.626,17,17S29.374,37,20,37z M29,20h1c0,5.514-4.486,10-10,10
+            c-2.193,0-4.272-0.711-5.993-2.007L12,30v-5h5l-2.279,2.279C16.248,28.391,18.075,29,20,29C24.963,29,29,24.963,29,20z">
+                                    </path>
+                                </svg>
+
+                            </p>
+                            <h3>Mp4 to Pdf supperted</h3>
+                            <p>A world-class video-to-PDF converter, the first of its kind!. More then 5+ format support coming soon...</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path d="M13.35,29.4c-0.111,0-0.222-0.037-0.312-0.109c-0.154-0.123-0.222-0.326-0.172-0.518l1.825-6.968
+            l-4.535-4.284c-0.139-0.131-0.191-0.33-0.134-0.512c0.057-0.183,0.212-0.316,0.401-0.346l6.218-0.963l2.908-6.019
+            c0.167-0.345,0.733-0.345,0.9,0l2.908,6.019l6.218,0.963c0.189,0.029,0.345,0.163,0.401,0.346c0.057,0.182,0.005,0.381-0.134,0.512
+            l-4.535,4.284l1.825,6.968c0.051,0.191-0.017,0.395-0.171,0.518c-0.155,0.124-0.369,0.144-0.543,0.053L20,26.009l-6.419,3.335
+            C13.508,29.382,13.429,29.4,13.35,29.4z M20,24.945c0.079,0,0.158,0.019,0.23,0.057l5.65,2.936l-1.614-6.165
+            c-0.047-0.177,0.007-0.365,0.14-0.49l4.008-3.786l-5.468-0.847c-0.163-0.025-0.303-0.128-0.374-0.276L20,11.049l-2.572,5.323
+            c-0.071,0.148-0.211,0.251-0.374,0.276l-5.469,0.847l4.008,3.786c0.133,0.125,0.187,0.313,0.141,0.49l-1.615,6.165l5.65-2.936
+            C19.842,24.964,19.921,24.945,20,24.945z"></path>
+                                    <path d="M20,38c-9.925,0-18-8.075-18-18c0-9.925,8.075-18,18-18c9.925,0,18,8.075,18,18C38,29.925,29.925,38,20,38z
+             M20,3C10.626,3,3,10.626,3,20s7.626,17,17,17s17-7.626,17-17S29.374,3,20,3z"></path>
+                                </svg>
+
+                            </p>
+                            <h3>Fast and easy</h3>
+                            <p>Just drop your files on the page, by clicking on the "Choose Files" button.
+                                Wait a little for the process to complete. We aim to do all our conversions in under 1-2
+                                minutes.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path
+                                        d="M24.781,24.46L20,19.678V34h-1V19.678l-4.782,4.782l-0.637-0.637l5.918-5.918l5.918,5.918L24.781,24.46z">
+                                    </path>
+                                    <path d="M33.812,32H26v-1h7.812C36.673,31,39,28.771,39,26.031s-2.327-4.969-5.188-4.969
+            c-0.181,0-0.395-0.093-0.482-0.25c-0.089-0.158-0.133-0.346-0.038-0.5c0.554-0.91,0.834-1.877,0.834-2.875
+            c0-3.17-2.691-5.75-5.999-5.75c-0.902,0-1.797,0.209-2.661,0.623c-0.237,0.113-0.524,0.023-0.652-0.207
+            C23.053,8.955,19.652,7,15.937,7c-5.548,0-10.062,4.332-10.062,9.656c0,0.761,0.104,1.549,0.311,2.344
+            c0.035,0.133,0.013,0.275-0.061,0.392c-0.073,0.117-0.192,0.198-0.327,0.224C3.018,20.157,1,22.526,1,25.25C1,28.421,3.692,31,7,31
+            h6v1H7c-3.86,0-7-3.028-7-6.75c0-3.032,2.116-5.689,5.1-6.498c-0.149-0.708-0.225-1.412-0.225-2.096C4.875,10.78,9.837,6,15.937,6
+            c3.92,0,7.525,1.989,9.517,5.222c0.87-0.355,1.767-0.534,2.672-0.534c3.859,0,6.999,3.028,6.999,6.75
+            c0,0.924-0.201,1.823-0.599,2.681C37.642,20.485,40,22.998,40,26.031C40,29.322,37.224,32,33.812,32z"></path>
+                                </svg>
+
+                            </p>
+                            <h3>In the cloud</h3>
+                            <p>All conversions take place in the cloud and will not consume any capacity from your
+                                computer.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path
+                                        d="M20,26.002c-3.309,0-6-2.692-6-6.002s2.691-6.002,6-6.002S26,16.69,26,20S23.309,26.002,20,26.002z
+             M20,14.998c-2.757,0-5,2.244-5,5.002c0,2.758,2.243,5.002,5,5.002s5-2.244,5-5.002C25,17.242,22.757,14.998,20,14.998z">
+                                    </path>
+                                    <path d="M20,38c-0.851,0-1.73-0.074-2.766-0.232l-0.35-0.054l-0.883-4.639c-0.853-0.261-1.665-0.596-2.42-0.997
+            L9.68,34.731l-0.285-0.209c-1.499-1.098-2.813-2.41-3.905-3.903l-0.208-0.284l2.648-3.9c-0.411-0.773-0.749-1.591-1.007-2.438
+            l-4.636-0.884l-0.053-0.349C2.074,21.721,2,20.843,2,20c0-0.834,0.074-1.711,0.232-2.758l0.053-0.35l4.636-0.884
+            c0.26-0.852,0.598-1.669,1.006-2.437l-2.65-3.899l0.208-0.285c1.093-1.493,2.405-2.806,3.9-3.902L9.67,5.277l3.898,2.65
+            c0.765-0.407,1.581-0.743,2.433-1.003l0.884-4.637l0.349-0.054c2.063-0.316,3.506-0.314,5.522,0l0.348,0.054l0.884,4.633
+            c0.855,0.261,1.678,0.6,2.449,1.012l3.898-2.651l0.284,0.208c1.488,1.088,2.801,2.402,3.902,3.905l0.209,0.285l-2.652,3.901
+            c0.409,0.77,0.744,1.584,1.001,2.431l4.634,0.883l0.054,0.349C37.926,18.281,38,19.156,38,20c0,0.849-0.074,1.727-0.234,2.762
+            l-0.054,0.349l-4.634,0.883c-0.258,0.851-0.595,1.667-1.003,2.434l2.649,3.9l-0.208,0.284c-1.094,1.496-2.409,2.811-3.909,3.907
+            l-0.284,0.209l-3.897-2.653c-0.771,0.41-1.588,0.746-2.436,1.004l-0.884,4.635l-0.348,0.055C21.756,37.924,20.854,38,20,38z
+             M17.734,36.83c1.669,0.23,2.898,0.228,4.522,0.001l0.866-4.546l0.299-0.083c0.979-0.273,1.917-0.66,2.787-1.148l0.271-0.152
+            l3.819,2.6c1.207-0.921,2.281-1.994,3.2-3.198l-2.598-3.823l0.152-0.27c0.487-0.864,0.874-1.802,1.148-2.785l0.083-0.299
+            l4.544-0.865C36.945,21.427,37,20.701,37,20c0-0.696-0.055-1.421-0.17-2.256l-4.543-0.866l-0.083-0.299
+            c-0.273-0.979-0.658-1.915-1.146-2.783l-0.152-0.27l2.599-3.823c-0.924-1.209-1.996-2.283-3.193-3.197l-3.821,2.6L26.22,8.954
+            c-0.869-0.491-1.812-0.881-2.8-1.158l-0.299-0.083l-0.866-4.543c-1.638-0.229-2.86-0.231-4.52,0.001l-0.866,4.545l-0.298,0.084
+            c-0.987,0.278-1.925,0.665-2.786,1.149l-0.27,0.152l-3.82-2.598C8.492,7.423,7.42,8.495,6.502,9.696l2.598,3.822l-0.152,0.27
+            c-0.487,0.866-0.875,1.804-1.152,2.79l-0.084,0.297L3.17,17.741C3.055,18.585,3,19.31,3,20c0,0.696,0.055,1.423,0.172,2.263
+            l4.543,0.866l0.083,0.299c0.274,0.979,0.662,1.917,1.153,2.79l0.151,0.27l-2.596,3.823c0.917,1.201,1.991,2.273,3.197,3.194
+            l3.824-2.601l0.27,0.152c0.849,0.479,1.782,0.863,2.773,1.144l0.297,0.084L17.734,36.83z"></path>
+                                </svg>
+
+                            </p>
+                            <h3>Custom settings</h3>
+                            <p>Advanced options coming soon... For example with a video converter you
+                                can choose filters, rotate, flip and other settings,</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path d="M16.9,25.699c-0.128,0-0.256-0.049-0.354-0.146l-6.2-6.199c-0.195-0.195-0.195-0.512,0-0.707
+            s0.512-0.195,0.707,0l5.847,5.846l12.047-12.046c0.195-0.195,0.512-0.195,0.707,0s0.195,0.512,0,0.707l-12.4,12.399
+            C17.156,25.65,17.028,25.699,16.9,25.699z"></path>
+                                    <path d="M20,38.1c-0.048,0-0.097-0.007-0.144-0.021C19.209,37.885,4,33.194,4,22.1V3.5C4,3.224,4.224,3,4.5,3h31
+            C35.776,3,36,3.224,36,3.5v18.6c0,11.095-15.209,15.785-15.856,15.979C20.097,38.093,20.048,38.1,20,38.1z M5,4v18.1
+            c0,9.812,13.451,14.472,15,14.976c1.549-0.504,15-5.172,15-14.976V4H5z"></path>
+                                </svg>
+
+                            </p>
+                            <h3>Security guaranteed</h3>
+                            <p>We delete uploaded files instantly once the pdf is created and ready for download. No one has access
+                                to your files and privacy is 100% guaranteed.</p>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 text-center">
+                            <p class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+                                    <path d="M35.5,38h-11c-1.379,0-2.5-1.121-2.5-2.5v-19c0-1.378,1.121-2.5,2.5-2.5h11c1.379,0,2.5,1.122,2.5,2.5v19
+            C38,36.879,36.879,38,35.5,38z M24.5,15c-0.827,0-1.5,0.673-1.5,1.5v19c0,0.827,0.673,1.5,1.5,1.5h11c0.827,0,1.5-0.673,1.5-1.5v-19
+            c0-0.827-0.673-1.5-1.5-1.5H24.5z"></path>
+                                    <path
+                                        d="M31.5,35h-3c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h3c0.276,0,0.5,0.224,0.5,0.5S31.776,35,31.5,35z">
+                                    </path>
+                                    <path d="M33,4.5V12h-1V5H3v18h17v1H3v2h17v1h-6.497c-0.144,0.893-0.688,2.883-2.741,5H20v1H9.5
+            c-0.209,0-0.396-0.13-0.469-0.326c-0.073-0.196-0.016-0.417,0.144-0.554c2.457-2.105,3.129-4.188,3.312-5.12H2.5
+            C2.224,27,2,26.776,2,26.5v-22C2,4.224,2.224,4,2.5,4h30C32.776,4,33,4.224,33,4.5z"></path>
+                                </svg>
+
+                            </p>
+                            <h3>All devices supported</h3>
+                            <p>Kheencho is browser-based and works for all platforms. There is no need to download and
+                                install any software.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--div class="dark-gray-box">
+        <h3>Upload Your File</h3>
+        <form action="" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" class="btn btn-primary">
+            <button type="submit" class="btn btn-success">Upload</button>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

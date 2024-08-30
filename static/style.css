@@ -1,0 +1,400 @@
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 100%;
+  max-width: 1150px;
+}
+
+.div {
+  display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1rem;
+  font-weight: 400;
+  
+  color: #212529;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.content-area {
+  padding: 55px 0;
+}
+
+.page-title {
+  margin-bottom: 28px;
+}
+
+.page-title {
+  margin: 0 0 30px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.converter-container {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.converter-container .convert-button,
+.converter-container .converter-wrapper {
+  margin-bottom: 0;
+}
+
+.converter-wrapper.tall {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.converter-container .converter-wrapper {
+  margin-bottom: 0;
+}
+
+.converter-wrapper.tall {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.converter-wrapper {
+  margin-left: 0;
+  margin-right: 0;
+ 
+}
+
+.converter-wrapper {
+  position: relative;
+ 
+}
+
+.converter-wrapper,
+.ui-pattern-1 {
+  background-color: #3c3c3c;
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .06) 25%, transparent 0), linear-gradient(-45deg, rgba(0, 0, 0, .06) 25%, transparent 0), linear-gradient(45deg, transparent 75%, rgba(0, 0, 0, .06) 0), linear-gradient(-45deg, transparent 75%, rgba(0, 0, 0, .06) 0);
+  background-size: 24px 24px;
+  background-position: 0 0, 0 12px, 12px -12px, -12px 0;
+}
+
+.converter {
+  padding: 50px 30px 0;
+  box-sizing: border-box;
+}
+
+.converter .file-source-button-wrapper {
+  padding-bottom: 30px;
+  box-sizing: border-box;
+}
+
+.converter .file-source-button {
+  box-shadow: 2px 7px 10px 0 rgba(0, 0, 0, .1), 2px 11px 11px 0 rgba(0, 0, 0, .1), 2px 6px 8px 0 rgba(0, 0, 0, .08), 2px 5px 8px 0 rgba(252, 22, 0, .05);
+}
+
+
+.file-source-button-resizable .file-source-button {
+  width: auto;
+  max-width: 455px;
+  font-size: 0;
+  
+}
+
+.file-source-button,
+.file-source-button>* {
+  user-select: none;
+}
+
+.file-source-button {
+  background-color: #68B984;
+  color: #fff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+.file-source-button-resizable .file-source-button .action-label {
+    display: inline-block;
+    vertical-align: top;
+   
+    padding: 20px 10px 20px 40px;
+    
+    color: inherit;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+    cursor: pointer;
+    width: 40%; 
+    margin: 0 auto;
+}
+
+.file-source-button-resizable .file-source-button .menu-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 768px;
+    box-sizing: border-box;
+}
+.file-source-button .menu-wrapper {
+  position: relative;
+  text-align: left;
+}
+
+.file-source-button-resizable .file-source-button .menu-wrapper {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 768px;
+}
+.file-source-button .menu-wrapper {
+  position: relative;
+  text-align: left;
+  box-sizing: border-box;
+
+}
+.file-source-button, .file-source-button>* {
+  user-select: none;
+}
+
+
+.file-source-button-resizable .file-source-button .menu-wrapper .file-source-btn {
+    display: none;
+    min-width: 768px;
+}
+
+.file-source-button .menu-wrapper .file-source-btn {
+    position: relative;
+    color: #fff;
+    border: none;
+    background: none;
+    box-shadow: none;
+    width: 100%;
+    margin: 0;
+    padding: 16px 57px 18px 25px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+}
+
+.file-source-button-resizable .file-source-button .file-source-nav {
+      /* display: inline-block!important; */
+    /* vertical-align: top; */
+    position: relative;
+    /* top: auto; */
+    /* left: auto; */
+    z-index: 0;
+    width: auto;
+    min-width: auto;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 0;
+    /* min-width: 768px; */
+    user-select: none;
+}
+.file-source-button, .file-source-button>* {
+  user-select: none;
+}
+.file-source-nav {
+ 
+  color: #fff;
+}
+
+.dropdown-menu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 100%;
+    padding: 0;
+    margin: 10px 0 0;
+    font-size: .875rem;
+    color: #333;
+    text-align: left;
+    list-style: none;
+    background-color: #1d1d1d;
+    background-clip: padding-box;
+    border: 0 solid rgba(40,40,40,.15);
+    border-radius: 4px;
+}
+
+
+.file-source-button-resizable .file-source-button .file-source-nav .nav-item.from-pc {
+    opacity: 1;
+    min-width: 768px;
+}
+
+.file-source-button-resizable .file-source-button .file-source-nav .nav-item {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    background-color: transparent!important;
+    border-width: 0!important;
+    border-radius: 0!important;
+    transition: opacity .15s ease-in-out,color .15s ease-in-out;
+    min-width: 768px;
+}
+
+
+.file-source-button-resizable .file-source-button .file-source-nav .nav-item>i {
+    position: relative;
+    width: 62px;
+    height: 65px;
+    margin: 0;
+}
+.file-source-button-resizable .file-source-button .file-source-nav .nav-item svg {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: scale(1);
+}
+.file-source-button-resizable .file-source-button .file-source-nav .nav-item svg {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: scale(1);
+}
+
+
+
+
+
+
+*+.advantages {
+    margin-top: 105px;
+}
+
+.advantages {
+    margin-bottom: 100px;
+}
+
+.advantages {
+    margin: 0 0 80px;
+}
+
+
+div {
+    display: block;
+}
+.advantages .row {
+  max-width: 1040px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages .row {
+  margin-bottom: -62px;
+}
+.main-container.full-height>.main-content {
+  flex: 1 1 auto;
+}
+.main-container>.main-content {
+  width: 100%;
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+.file-source-button-wrapper .file-source-caption {
+  padding: 13px 0 2px;
+  color: #959595;
+  letter-spacing: -.3px;
+  cursor: default;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+.file-source-caption {
+  color: #959595
+}
+
+input[type="submit"] {
+  background-color: #4CAF50; /* Green background */
+  color: rgb(241, 241, 241); /* White text */
+  padding: 12px 24px; /* Padding */
+  border: 5px; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px;
+}
+
+/* On hover */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+input[type="number"] {
+  background-color: #4CAF50; /* Green background */
+  color: rgb(241, 241, 241); /* White text */
+  padding: 12px 24px; /* Padding */
+  border: 5px; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px;
+}
+
+
+input[type=submit] {
+        margin-left: 20px; /* adjust the value to move the button further to the left */
+    }
+
+
+#submit-button {
+      margin-left: 100px; /* Change this value to adjust the amount of left margin */
+    }
+
+
+    
+input[type="file"] {
+      display: none;
+    }
+
+.text-left {
+      text-align: right;
+  }
+
+/* Make the brand name larger and add some padding */
+.navbar-brand {
+  font-size: 2em;
+  padding: 10px;
+}
+
+/* Add a background color to the active menu item */
+.navbar-nav .active > .nav-link {
+  background-color: #e9ecef;
+}
+
+/* Add some margin to the dropdown menu */
+.dropdown-menu {
+  margin-top: 0.5em;
+}
+
+/* Add a background color and hover effect to the dropdown items */
+.dropdown-menu .dropdown-item {
+  background-color: #f8f9fa;
+}
+.dropdown-menu .dropdown-item:hover {
+  background-color: #e9ecef;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  color: #68B984!important;
+}
