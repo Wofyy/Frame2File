@@ -37,6 +37,7 @@
 
 ## 🚀 Installation
 
+
 ### For Linux
 
 ```bash
@@ -51,6 +52,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+
 ### For Windows
 
 ```powershell
@@ -61,6 +63,7 @@ python -m venv venv
 # Install dependencies
 pip install -r requirements.txt
 ```
+
 
 ### For macOS
 
