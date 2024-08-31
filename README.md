@@ -1,3 +1,4 @@
+
 # Frame2File
 
 <div align="center">
@@ -8,10 +9,11 @@
 [![GitHub stars](https://img.shields.io/github/stars/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/network/members)
 [![GitHub license](https://img.shields.io/github/license/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/blob/main/LICENSE)
+[![Join our Discord](https://img.shields.io/discord/123456789012345678?label=Join%20our%20Discord&logo=discord&style=for-the-badge)](https://discord.gg/mZejAeM3)
 
 **Convert your videos to high-quality PDFs with ease!**
 
-[Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing) • [License](#license)
+[Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing) • [License](#license) • [Discord](#discord)
 
 </div>
 
@@ -37,7 +39,6 @@
 
 ## 🚀 Installation
 
-
 ### For Linux
 
 ```bash
@@ -52,7 +53,6 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-
 ### For Windows
 
 ```powershell
@@ -63,7 +63,6 @@ python -m venv venv
 # Install dependencies
 pip install -r requirements.txt
 ```
-
 
 ### For macOS
 
@@ -101,6 +100,10 @@ Contributions are what make the open-source community such an amazing place to l
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## 💬 Discord
+
+Join our community on [Discord](https://discord.gg/mZejAeM3) to get help, share your feedback, and connect with other users!
+
 ---
 
 <div align="center">
@@ -108,6 +111,5 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Made with ❤️ by [Wofyy](https://github.com/Wofyy)
 
 </div>
-
-
+```
 
