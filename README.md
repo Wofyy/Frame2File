@@ -1,83 +1,107 @@
+# Frame2File
 
-# Modern Video to PDF Scanner
+<div align="center">
 
-![Scanner Demo](link-to-demo-gif-or-image.gif)
+![Frame2File Logo](https://via.placeholder.com/150x150.png?text=F2F)
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Features](#features)
-- [Demo](#demo)
-- [Installation](#installation)
+[![GitHub repo size](https://img.shields.io/github/repo-size/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File)
+[![GitHub stars](https://img.shields.io/github/stars/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/network/members)
+[![GitHub license](https://img.shields.io/github/license/Wofyy/Frame2File?style=for-the-badge)](https://github.com/Wofyy/Frame2File/blob/main/LICENSE)
 
+**Convert your videos to high-quality PDFs with ease!**
 
-## Introduction
-Modern Video to PDF Scanner is a Python project that converts video files into PDF documents. With this tool, you can easily digitize documents by uploading a video file containing the document pages, and the application will process it to produce a PDF version of the document.
+[Features](#features) • [Tech Stack](#tech-stack) • [Installation](#installation) • [Usage](#usage) • [Contributing](#contributing) • [License](#license)
 
-## Features
-- Convert video files (containing document pages) to PDFs.
-- Simple and user-friendly web interface for uploading videos.
-- Efficient processing using Python and video processing libraries.
-- High-quality output PDF with customizable settings.
+</div>
 
-## Demo Screenshot
+## 🌟 Features
 
+- 🎥 Convert videos to PDFs seamlessly
+- 🖥️ User-friendly web interface
+- ⚡ Efficient processing with Python
+- 🎨 High-quality output with customizable settings
 
-![Screenshot (2363)](https://github.com/SAHILGAWLI/Kheencho/assets/100032163/e8a12c78-e3f9-4745-8dec-11c1f14d9e6a)
+## 🛠️ Tech Stack
 
+<div align="center">
 
+![Python](https://img.shields.io/badge/Python-91%25-blue?style=for-the-badge&logo=python&logoColor=white)
+![Cython](https://img.shields.io/badge/Cython-5.2%25-lightgrey?style=for-the-badge&logo=cython&logoColor=white)
+![C](https://img.shields.io/badge/C-2.5%25-yellow?style=for-the-badge&logo=c&logoColor=white)
+![C++](https://img.shields.io/badge/C++-0.9%25-green?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![XSLT](https://img.shields.io/badge/XSLT-0.3%25-red?style=for-the-badge&logo=xml&logoColor=white)
+![Fortran](https://img.shields.io/badge/Fortran-0.1%25-blueviolet?style=for-the-badge&logo=fortran&logoColor=white)
 
+</div>
 
+## 🚀 Installation
 
+### For Linux
 
-![Screenshot (2364)](https://github.com/SAHILGAWLI/Kheencho/assets/100032163/3863cca3-e73c-4822-bb9d-79ad6026b556)
-
-
-
-
-
-
-![Screenshot (2365)](https://github.com/SAHILGAWLI/Kheencho/assets/100032163/3b50cbe8-f92c-4c13-a713-ba1e7f1b36e5)
-
-
-## Installation for Linux
-Follow these steps to set up the project:
-
-### Step 1: Install the required package to create virtual environments if not already installed
 ```bash
+# Install Python virtual environment
 sudo apt install python3-venv
-```
 
-### Step 2: Create a virtual environment in your project directory
-```bash
+# Create and activate virtual environment
 python3 -m venv venv
-```
-
-### Step 3: Activate the virtual environment
-```bash
 source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-### Step 4: Install your packages within the virtual environment
-```bash
-pip install opencv-python pytesseract numpy img2pdf flask Flask-WTF WTForms scikit-image Pillow flask-socketio flask-cors
+### For Windows
+
+```powershell
+# Create and activate virtual environment
+python -m venv venv
+.\venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
+### For macOS
 
-
-## Installation for Windows
-Follw these steps to set up the project:
-
-
-### Step 1: Navigate to your project directory & create a virtual environment in your project directory
 ```bash
+# Create and activate virtual environment
 python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
 ```
 
-### Step 2: Activate the virtual environment
-```bash
-venv\Scripts\activate
-```
+## 📖 Usage
 
-### Step 3: Install your packages within the virtual environment
-```bash
-pip install opencv-python pytesseract numpy img2pdf flask Flask-WTF WTForms scikit-image Pillow flask-socketio flask-cors
+1. Start the application:
+   ```bash
+   python app.py
+   ```
+2. Open your web browser and navigate to `http://localhost:5000`
+3. Upload your video file
+4. Adjust settings if needed
+5. Click "Convert" and wait for your PDF!
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+
+Made with ❤️ by [Wofyy](https://github.com/Wofyy)
+
+</div>
