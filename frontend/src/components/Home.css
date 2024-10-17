@@ -1,0 +1,119 @@
+/* Home.css */
+
+/* General styling for the main content area */
+.main-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Container to centralize content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for the page title */
+.page-title {
+    margin-bottom: 30px;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.page-title h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Styling for the converter container */
+.converter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.converter-wrapper {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.file-source-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.file-source-button input {
+    display: none;
+}
+
+.file-source-caption {
+    margin-top: 10px;
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Styling for the advantages section */
+.advantages {
+    margin-top: 30px;
+}
+
+.advantages .icon {
+    margin-bottom: 10px;
+}
+
+.advantages svg {
+    fill: #007bff;
+}
+
+.advantages h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.advantages p {
+    font-size: 0.875rem;
+    color: #666;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .page-title h1 {
+        font-size: 2rem;
+    }
+
+    .page-title h2 {
+        font-size: 1.25rem;
+    }
+
+    .converter-wrapper {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .file-source-button {
+        font-size: 0.875rem;
+    }
+
+    .advantages h3 {
+        font-size: 1.125rem;
+    }
+
+    .advantages p {
+        font-size: 0.75rem;
+    }
+}
