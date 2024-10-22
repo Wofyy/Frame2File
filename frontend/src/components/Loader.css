@@ -1,23 +1,31 @@
 .loader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background: rgba(255, 255, 255, 0.9);
-  }
-  
-  .spinner {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid #3498db; /* Blue */
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full height to center loader vertically */
+  background-color: #f4f4f4; /* Light background color */
+  color: #2c3e50; /* Dark text color */
+  font-family: Arial, sans-serif;
+}
+
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey background */
+  border-top: 8px solid #000000; /* Blue spinner */
+  border-radius: 50%;
+  width: 60px; /* Spinner size */
+  height: 60px; /* Spinner size */
+  animation: spin 1s linear infinite; /* Spin animation */
+  margin-bottom: 15px; /* Space between spinner and text */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+p {
+  font-size: 16px; /* Text size */
+  font-weight: 500; /* Slightly bold text */
+  text-align: center; /* Center align text */
+}

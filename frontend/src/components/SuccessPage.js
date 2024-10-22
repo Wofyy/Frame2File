@@ -1,5 +1,5 @@
-// SuccessPage.js
 import React from 'react';
+import './Success.css'; // Import CSS for styling
 
 const SuccessPage = () => {
   console.log("SuccessPage component is rendering");
@@ -8,7 +8,6 @@ const SuccessPage = () => {
     console.log("Fetching PDF from backend");
 
     try {
-      // Fetch the PDF file from the Flask backend
       const response = await fetch('http://localhost:5000/download_pdf', {
         method: 'GET',
         headers: {
@@ -20,18 +19,13 @@ const SuccessPage = () => {
         throw new Error('Network response was not ok');
       }
 
-      // Convert response to a blob
       const blob = await response.blob();
-      
-      // Create a link element
       const url = window.URL.createObjectURL(blob);
       const a = document.createElement('a');
       a.href = url;
       a.download = 'output.pdf';
       document.body.appendChild(a);
       a.click();
-      
-      // Clean up by revoking the object URL and removing the element
       a.remove();
       window.URL.revokeObjectURL(url);
 
@@ -42,9 +36,12 @@ const SuccessPage = () => {
   };
 
   return (
-    <div>
-      <h1>Success Page</h1>
-      <button onClick={downloadPDF}>Download PDF</button>
+    <div className="success-container">
+      <h1>Success!</h1>
+      <p>Your file has been processed successfully.</p>
+      <button className="download-btn" onClick={downloadPDF}>
+        Download PDF
+      </button>
     </div>
   );
 };
