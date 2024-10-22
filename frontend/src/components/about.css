@@ -1,0 +1,41 @@
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    color: #2c3e50;
+  }
+  
+  h3 {
+    color: #34495e;
+    margin-top: 20px;
+  }
+  
+  .pricing-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .pricing-item {
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ecf0f1;
+  }
+  
+  .pricing-item h4 {
+    margin: 0 0 10px 0;
+    color: #27ae60; /* Green for tier names */
+  }
+  
+  .feature-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .feature-item {
+    margin: 5px 0;
+  }
+  

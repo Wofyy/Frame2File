@@ -1,0 +1,51 @@
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 50px); /* Full height minus a little space for padding */
+    background: linear-gradient(135deg, #f5f5f5, #ffffff); /* Light gradient background */
+    color: #000000; /* Black text */
+    font-family: 'Arial', sans-serif; /* Font family */
+    text-align: center; /* Center align text */
+    padding: 20px;
+    position: relative; /* Allow positioning adjustments */
+    top: -20%; /* Move content higher */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners for container */
+    z-index: 1; /* Ensure it sits above the background */
+  }
+  
+  h1 {
+    margin-bottom: 10px; /* Space below heading */
+    font-size: 2.8rem; /* Larger font size */
+    animation: fadeIn 0.5s ease-in-out; /* Fade-in animation */
+  }
+  
+  p {
+    margin-bottom: 20px; /* Space below paragraph */
+    font-size: 1.2rem; /* Medium font size */
+    animation: fadeIn 0.7s ease-in-out; /* Fade-in animation */
+  }
+  
+  .download-btn {
+    background-color: #000000; /* Black button */
+    color: #ffffff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 30px; /* Padding for button */
+    font-size: 1.1rem; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for hover effect */
+  }
+  
+  .download-btn:hover {
+    background-color: #444444; /* Darker shade on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  

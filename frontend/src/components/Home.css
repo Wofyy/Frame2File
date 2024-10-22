@@ -1,0 +1,222 @@
+/* Home.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-content {
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.converter-container {
+    margin-bottom: 60px;
+}
+
+.converter-wrapper {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.converter-wrapper:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.upload-icon {
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.drop-zone-text {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-upload-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload-button:hover {
+    background-color: #45a049;
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.advantage-item {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.advantage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.advantage-icon {
+    color: #4CAF50;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 20px;
+}
+
+.advantage-item h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.advantage-item p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 1024px) {
+    .advantages {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.main-content {
+    min-height: 100vh;
+    padding: 2rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.content-area {
+    width: 100%;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.page-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.page-title h2 {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+.converter-container {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+
+
+.converter-wrapper {
+    background: #2d2d2d;
+    background-image: repeating-linear-gradient(45deg, #333 0, #333 2px, transparent 0, transparent 8px);
+    border-radius: 12px;
+    padding: 40px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    transition: border 0.3s ease;
+}
+
+.converter-wrapper.drag-over {
+    border: 2px dashed #4CAF50;
+}
+
+.file-upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.choose-files-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.choose-files-btn:hover {
+    background: #45a049;
+}
+
+.file-input {
+    display: none;
+}
+
+.upload-btn {
+    background: #2196F3;
+    color: white;
+    padding: 12px 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.upload-btn:hover {
+    background: #1976D2;
+}
+
+.error-message {
+    color: #ff4444;
+    margin: 0.5rem 0;
+}
+
+.drop-text {
+    color: #888;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Your existing advantages styles remain unchanged */
+
